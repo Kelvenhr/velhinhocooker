@@ -113,3 +113,17 @@ function pagar() {
         window.alert('Por favor, adicione mais dinheiro para pagar.')
     }
 }
+
+var mobile = document.querySelector('div#mobile')
+
+mobile.addEventListener('click', click)
+
+function click() {
+    var list = document.getElementsByTagName('ul')[0]
+    if (list.style.transform == 'translateX(100%)') {
+        list.style.transform = 'translateX(0%)'
+    } else {
+        list.style.transform = 'translateX(100%)'
+    }
+
+}

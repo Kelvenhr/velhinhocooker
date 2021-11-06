@@ -40,6 +40,7 @@ header {
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.295);
     margin: 0px 0px 10px 0px;
     background: rgb(77, 74, 74);
+    min-height: 8vh;
 }
 
 nav {
@@ -216,4 +217,51 @@ main {
 
 #refrigerante:hover {
     transform: translateY(-10px);
+}
+
+#mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.class1 {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+@media (max-width: 670px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav > ul {
+        position: absolute;
+        background-color: rgb(80, 80, 80);
+        top: 15vh;
+        width: 50vh;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    nav > ul > li {
+        margin: 20px;
+    }
+
+    #cardapio > div > img {
+        filter: none;
+    }
+
+    #cardapio > div:hover {
+        transform: none;
+    }
+    
+    #mobile {
+        display: block;
+    }
 }
