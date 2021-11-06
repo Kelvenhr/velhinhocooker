@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagens/favfood.png" type="image/x-icon">
+    <title>Velhinho Cooker</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="imagens/hamburguer.png" alt="hamburguer">
+                <div id="logotext">
+                    <p>Velhinho</p>
+                    <p>Cooker</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="client">
+            <div id="userimg">
+                <img src="/imagens/profile.png" alt="User">
+            </div>
+
+            <div id="user">
+                <p id="username">Nome:</p>
+                <p id="here">Saldo: R$ 0,00</p>
+            </div>
+        </section>
+        <section id="cardapio">
+            <div id="lanche-h">
+                <img src="imagens/lanche-h.png" alt="">
+                <p>R$ 5,99</p>
+            </div>
+            <div id="lanche-c">
+                <img src="imagens/lanche-c.png" alt="">
+                <p>R$ 4,99</p>
+            </div>
+            <div id="refrigerante">
+                <img src="imagens/refrigerante.png" alt="">
+                <p>R$ 2,99</p>
+            </div>
+        </section>
+        <section id="saldo">
+            <p>Adicionar saldo: <input type="number" name="dinheiro" id="dinheiro"></p>
+            <p><input id="btn" type="button" value="Enviar" onclick='enviar()'></p>
+        </section>
+        <p id="msg">
+
+        </p>
+        <div id="pagar">
+            <div id="p">
+                <h2>Lista de compras</h2>
+                <select name="lista" id="lista" size="4"></select>
+            </div> 
+            <input type="button" value="Pagar" onclick='pagar()'>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

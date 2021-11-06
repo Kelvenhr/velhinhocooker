@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --cor1:#FFB800;
+    --cor2:#DB0007;
+
+    --font-padrao:'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: rgb(56, 56, 56);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logotext {
+    color: var(--cor1);
+    line-height: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171);
+}
+
+#logo img {
+    width: 100px;
+}
+
+header {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.295);
+    margin: 0px 0px 10px 0px;
+    background: rgb(77, 74, 74);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    min-height: 15vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+nav > ul > li {
+    margin: 0px 0px 0px 10px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    background-color: #FFB800;
+    padding: 7px 11px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav > ul > li > a:hover {
+    background-color: #eca900;
+}
+
+main {
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.562);
+}
+
+#client {
+    background: rgb(30, 153, 210);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #fff;
+    padding: 10px;
+}
+
+#saldo {
+    background: gray;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#saldo > p {
+    margin-left: 20px;
+    color: #fff;
+}
+
+#msg {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: gray;
+    color: #fff;
+    padding: 15px;
+}
+
+#pagar {
+    grid-column: 1/5;
+    padding: 20px;
+    background-color: gray;
+}
+
+#pagar > input {
+    border: 2px solid rgb(81, 182, 250);
+    background-color: transparent;
+    padding: 5px 30px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0px 0px 0px;
+}
+
+#p {
+    color: #fff;
+}
+
+#p > h2, select {
+    margin: 10px 0px;
+}
+
+#lista {
+    min-width: 150px;
+    height: 100%;
+}
+
+#btn {
+    padding: 5px 30px;
+    border: 2px solid rgb(81, 182, 250);
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5%;
+}
+
+#btn:hover {
+    background-color: rgb(81, 182, 250);
+}
+
+#cardapio {
+    grid-column: 1/5;
+    background: darkgoldenrod;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cardapio > div {
+    padding: 10px 0px;
+}
+
+#userimg {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#user {
+    padding-left: 10px;
+}
+
+#lanche-h, #lanche-c, #refrigerante{
+    max-width: 150px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#lanche-h > img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.568));
+    width: 100%;
+    cursor: pointer;
+}
+
+#lanche-c > img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    width: 100%;
+    cursor:pointer;
+}
+
+#refrigerante > img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.548));
+    width: 42%;
+    cursor: pointer;
+}
+
+#cardapio > div > p {
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+#lanche-h:hover {
+    transform: translateY(-10px);
+}
+
+#lanche-c:hover {
+    transform: translateY(-10px);
+}
+
+#refrigerante:hover {
+    transform: translateY(-10px);
+}
