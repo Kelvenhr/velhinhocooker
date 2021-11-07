@@ -18,6 +18,11 @@
 body {
     font-family: var(--font-padrao);
     background-color: rgb(56, 56, 56);
+    overflow: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #logo {
@@ -89,6 +94,8 @@ main {
     grid-row: 1/2;
     color: #fff;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #saldo {
@@ -219,6 +226,10 @@ main {
     transform: translateY(-10px);
 }
 
+#dinheiro {
+    max-width: 150px;
+}
+
 #mobile {
     display: none;
     cursor: pointer;
@@ -247,6 +258,7 @@ main {
         right: 0;
         transform: translateX(100%);
         transition: 0.3s;
+        display: none;
     }
 
     nav > ul > li {
@@ -262,6 +274,30 @@ main {
     }
     
     #mobile {
-        display: block;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #client {
+        display: flex;
+        align-items: center;
+    }
+
+    #saldo {
+        padding: 20px 0px;
+    }
+
+    #logo > img {
+        width: 30%;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }

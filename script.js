@@ -122,8 +122,10 @@ function click() {
     var list = document.getElementsByTagName('ul')[0]
     if (list.style.transform == 'translateX(100%)') {
         list.style.transform = 'translateX(0%)'
+        list.style.display = 'flex'
     } else {
         list.style.transform = 'translateX(100%)'
+        list.style.display = 'none'
     }
 
 }
