@@ -258,7 +258,6 @@ main {
         right: 0;
         transform: translateX(100%);
         transition: 0.3s;
-        display: none;
     }
 
     nav > ul > li {
