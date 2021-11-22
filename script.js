@@ -119,6 +119,7 @@ var mobile = document.querySelector('div#mobile')
 mobile.addEventListener('click', click)
 
 function click() {
+    var imgs = document.getElementById('img1')
     var list = document.getElementsByTagName('ul')[0]
     if (list.style.transform == 'translateX(100%)') {
         list.style.transform = 'translateX(0%)'
